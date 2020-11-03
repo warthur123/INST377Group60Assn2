@@ -1,33 +1,40 @@
-const { result } = require("cypress/types/lodash");
-
-const api = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 const restaurants = [];
 
-const query = document.querySelector('.search');
-const suggestions = document.querySelector('.suggestions');
-
 // fetch data from api. api -> json -> array
-fetch(api).then(fromApi => fromApi.json()).then(data => restaurants.push(...data))
+fetch('/api', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then((fromServer) => fromServer.json())
+    .then((jsonFromServer) => restaurants.push(...jsonFromServer))
+    .catch((err) => {
+      console.log(err);
+    });
 
 
 // find restaurants that match the inputted word. 
 // return: list of matching restaurants
-function findMatches(match, restaurants) {
-    result = restaurants.filter(restaurant => {
-        const regex = new RegExp(match, 'gi');
-        return restaurant.name.match(regex) 
-            || restaurant.category.match(regex)
-            || restaurant.address_line_1.match(regex)
-            || restaurant.address_line_2.match(regex)
-            || restaurant.zip.match(regex)
-
-    });
-    return result;
+function findMatches(wordMatch, restaurants) {
+    if(wordMatch != ''){
+        result = restaurants.filter(curr => {
+            const regex = new RegExp(wordMatch, 'gi');
+            return curr.name.match(regex);
+        });
+        return result;
+    }
+    // if textbox is empty, dont return any suggestions
+    else {
+        return [];
+    }
 }
 
+const query = document.querySelector('.search');
+
 function showMatches() {
+    $('.suggestions').empty();
     const matchList = findMatches(this.value, restaurants);
-   
     const html = matchList.map(restaurant => {
         return `
         <li>
@@ -38,10 +45,11 @@ function showMatches() {
             <span class="zip">${restaurant.zip}</span>
         </li>
         `;
-    });
-
-    suggestions.innerHtml = html;
+    }).join('');
+    console.log(html);
+    $('.suggestions').append(html);
+    
 }
 
+query.addEventListener('input', showMatches);
 
-query.addEventListener('change', showMatches());
