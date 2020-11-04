@@ -20,7 +20,13 @@ function findMatches(wordMatch, restaurants) {
     if(wordMatch != ''){
         result = restaurants.filter(curr => {
             const regex = new RegExp(wordMatch, 'gi');
-            return curr.name.match(regex);
+
+            print(curr.name);
+            return curr.name.match(regex) 
+                || curr.category.match(regex) 
+                || curr.address_line_1.match(regex)
+                || curr.city.match(regex)
+                || curr.zip.match(regex);
         });
         return result;
     }
@@ -44,12 +50,11 @@ function showMatches() {
             <span class="name">${restaurant.name}</span><br>
             <span class="category">${restaurant.category}</span><br>
             <span class="address_line_1">${restaurant.address_line_1}</span><br>
-            <span class="address_line_1">${restaurant.address_line_2}</span><br>
+            <span class="address_line_1">${restaurant.city}</span><br>
             <span class="zip">${restaurant.zip}</span>
         </li><br>
         `;
     }).join('');
-    console.log(html);
     $('.suggestions').append(html);
     
 }
