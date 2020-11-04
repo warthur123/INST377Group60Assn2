@@ -20,10 +20,12 @@ function findMatches(wordMatch, restaurants) {
     if(wordMatch != ''){
         result = restaurants.filter(curr => {
             const regex = new RegExp(wordMatch, 'gi');
+
+            console.log(curr.name);
             return curr.name.match(regex) 
                 || curr.category.match(regex) 
                 || curr.address_line_1.match(regex)
-                || curr.city.match(regex)
+                || curr.city && curr.city.match(regex)
                 || curr.zip.match(regex);
         });
         return result;
