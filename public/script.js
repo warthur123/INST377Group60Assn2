@@ -20,8 +20,6 @@ function findMatches(wordMatch, restaurants) {
     if(wordMatch != ''){
         result = restaurants.filter(curr => {
             const regex = new RegExp(wordMatch, 'gi');
-
-            print(curr.name);
             return curr.name.match(regex) 
                 || curr.category.match(regex) 
                 || curr.address_line_1.match(regex)
