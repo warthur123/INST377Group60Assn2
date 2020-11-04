@@ -30,20 +30,23 @@ function findMatches(wordMatch, restaurants) {
     }
 }
 
-const query = document.querySelector('.search');
+const query = document.querySelector('#search');
 
 function showMatches() {
-    $('.suggestions').empty();
+    $('#filteredCases').empty();
+    $('#filteredCases').append(`<ul class="suggestions"></ul>`);
+
+
     const matchList = findMatches(this.value, restaurants);
     const html = matchList.map(restaurant => {
         return `
         <li>
-            <span class="name">${restaurant.name}</span>
-            <span class="category">${restaurant.category}</span>
-            <span class="address_line_1">${restaurant.address_line_1}</span>
-            <span class="address_line_1">${restaurant.address_line_2}</span>
+            <span class="name">${restaurant.name}</span><br>
+            <span class="category">${restaurant.category}</span><br>
+            <span class="address_line_1">${restaurant.address_line_1}</span><br>
+            <span class="address_line_1">${restaurant.address_line_2}</span><br>
             <span class="zip">${restaurant.zip}</span>
-        </li>
+        </li><br>
         `;
     }).join('');
     console.log(html);
@@ -52,4 +55,3 @@ function showMatches() {
 }
 
 query.addEventListener('input', showMatches);
-
