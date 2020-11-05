@@ -49,9 +49,11 @@ function showMatches() {
         <li>
             <span class="name">${restaurant.name}</span><br>
             <span class="category">${restaurant.category}</span><br>
-            <span class="address_line_1">${restaurant.address_line_1}</span><br>
-            <span class="address_line_1">${restaurant.city}</span><br>
-            <span class="zip">${restaurant.zip}</span>
+            <address class="address">
+                ${restaurant.address_line_1}<br>
+                ${restaurant.city}<br>
+                ${restaurant.zip}
+            </address>
         </li><br>
         `;
     }).join('');
