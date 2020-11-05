@@ -1,0 +1,28 @@
+body {
+    background: rgb(0, 47, 92);
+    margin-left: 10px;
+}
+.wrapper {
+    margin-bottom: 5px;
+  padding: 4px 8px;
+}
+/*
+.container .flex-outer {
+
+}
+.search-form {
+ font 
+ color: rgb(0, 0, 0);
+}
+.address{
+    
+}
+*/
+.filteredCases {
+    background: rgb(251, 252, 185);
+    /*font: 
+    graidient */
+    color:  rgb(0, 0, 0);
+}
+
+  
