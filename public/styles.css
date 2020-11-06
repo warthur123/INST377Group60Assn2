@@ -14,15 +14,18 @@ body {
  font 
  color: rgb(0, 0, 0);
 }
-.address{
+.address-line 1{
     
 }
 */
 .filteredCases {
-    background: rgb(251, 252, 185);
-    /*font: 
-    graidient */
+    background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
+    /*background: rgb(251, 252, 185);
+    font: */
     color:  rgb(0, 0, 0);
+}
+.address{
+    font:italic;
 }
 
   
