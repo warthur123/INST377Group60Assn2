@@ -13,7 +13,6 @@ fetch('/api', {
       console.log(err);
     });
 
-
 // find restaurants that match the inputted word. 
 // return: list of matching restaurants
 function findMatches(wordMatch, restaurants) {
