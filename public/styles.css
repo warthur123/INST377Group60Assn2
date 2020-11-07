@@ -43,7 +43,7 @@ label {
 li {
  display: block;
  background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
- max-width: 200px;
+ max-width: 300px;
  border: black;
  border-radius: 1px;
  padding: 10px;
