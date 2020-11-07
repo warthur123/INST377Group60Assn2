@@ -5,6 +5,7 @@ body {
 .wrapper {
     margin-bottom: 5px;
   padding: 4px 8px;
+  margin-left: 10px;
 }
 h1 {
     color: black;
@@ -13,14 +14,16 @@ h1 {
 .container .flex-outer {
 
 }
-.search-form {
- font 
- color: rgb(0, 0, 0);
-}
+
 .address-line 1{
     
 }
 */
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
 .filteredCases {
     background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
     border: black;
