@@ -8,7 +8,7 @@ body {
   margin-left: 10px;
 }
 h1 {
-    color: black;
+    color: white;
 }
 /*
 .container .flex-outer {
@@ -23,6 +23,9 @@ input {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 5px;
     color: rgb(0, 0, 0);
+}
+label {
+    color:white;
 }
 .filteredCases {
     
