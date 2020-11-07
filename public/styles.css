@@ -36,6 +36,7 @@ label {
    flex-wrap: nowrap;
 }
 .address{
+    color: rgb(128, 128, 128);
     font:italic;
 }
 li {
