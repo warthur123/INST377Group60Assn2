@@ -12,7 +12,7 @@ h1 {
 }
 /*
 .container .flex-outer {
-
+ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .address-line 1{
@@ -36,6 +36,9 @@ input {
 }
 .address{
     font:italic;
+}
+li {
+ display: block;
 }
 
   
