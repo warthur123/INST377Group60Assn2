@@ -9,6 +9,7 @@ body {
 }
 h1 {
     color: white;
+    margin-bottom: 20px;
 }
 /*
 .container .flex-outer {
@@ -26,6 +27,7 @@ input {
 }
 label {
     color:white;
+    margin-right: 10px;
 }
 .filteredCases {
     
@@ -41,6 +43,7 @@ label {
 li {
  display: block;
  background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
+ max-width: 200px;
  border: black;
  border-radius: 1px;
  padding: 10px;
