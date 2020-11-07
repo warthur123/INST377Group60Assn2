@@ -25,20 +25,24 @@ input {
     color: rgb(0, 0, 0);
 }
 .filteredCases {
-    background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
-    border: black;
-    border-radius: 1px;
-    padding: 10px;
-    margin-bottom: 10px;
+    
+   
     /*background: rgb(251, 252, 185);
     font: */
-    color:  rgb(0, 0, 0);
+   flex-direction: column;
+   flex-wrap: nowrap;
 }
 .address{
     font:italic;
 }
 li {
  display: block;
+ background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
+ border: black;
+ border-radius: 1px;
+ padding: 10px;
+ margin-bottom: 10px;
+ color:  rgb(0, 0, 0);
 }
 
   
