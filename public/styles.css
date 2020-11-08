@@ -37,7 +37,6 @@ label {
    margin-left: 10px;
 }
 .address{
-    color: rgb(128, 128, 128);
     font:italic;
     font-weight: normal;
 }
@@ -48,14 +47,15 @@ li {
  max-width: 300px;
  border: black;
  border-radius: 1px;
- padding: 20px;
+ padding: 15px;
  margin-bottom: 10px;
- color:  rgb(0, 0, 0);
- border-radius: 25px;
+ color: rgb(128, 128, 128);
+ border-radius: 20px;
 }
 .name{
+    color:  rgb(0, 0, 0);
     font-weight:bold;
-    font-size: 30;
+    font-size: 35;
 }
 
   
