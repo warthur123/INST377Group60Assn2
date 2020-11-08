@@ -39,11 +39,10 @@ label {
 .address{
     color: rgb(128, 128, 128);
     font:italic;
+    font-weight: normal;
 }
 li {
  display: block;
- font:bold;
- font-size: 25;
  background-image: linear-gradient( rgb(255, 180, 109),rgb(255, 255, 255));
  font-family: 'Amiri', sans-serif;
  max-width: 300px;
@@ -53,6 +52,10 @@ li {
  margin-bottom: 10px;
  color:  rgb(0, 0, 0);
  border-radius: 25px;
+}
+.name{
+    font-weight:bold;
+    font-size: 30;
 }
 
   
