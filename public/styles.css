@@ -1,6 +1,6 @@
 body {
     background: rgb(0, 47, 92);
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .wrapper {
     margin-bottom: 5px;
@@ -55,7 +55,7 @@ li {
 .name{
     color:  rgb(0, 0, 0);
     font-weight:bold;
-    font-size: 45;
+    font-size: 60;
 }
 
   
