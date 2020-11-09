@@ -1,3 +1,5 @@
+
+
 const restaurants = [];
 
 // fetch data from api. api -> json -> array
@@ -44,13 +46,17 @@ function showMatches() {
 
     const matchList = findMatches(this.value, restaurants);
     const html = matchList.map(restaurant => {
+        const name = restaurant.name.toLowerCase();
+        const address = restaurant.address_line_1.toLowerCase();
+        const city = restaurant.city.toLowerCase();
+
         return `
         <li>
-            <span class="name">${restaurant.name}</span><br>
+            <span class="name">${name}</span><br>
             <span class="category">${restaurant.category}</span><br>
             <address class="address">
-                ${restaurant.address_line_1}<br>
-                ${restaurant.city}<br>
+                ${address}<br>
+                ${city}<br>
                 ${restaurant.zip}
             </address>
         </li><br>

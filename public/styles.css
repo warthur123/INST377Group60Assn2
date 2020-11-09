@@ -24,6 +24,7 @@ input {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 5px;
     color: rgb(0, 0, 0);
+    width: 250px;
 }
 label {
     color:white;
@@ -39,6 +40,9 @@ label {
 .address{
     font:italic;
     font-weight: normal;
+
+    /*title case*/
+    text-transform: capitalize;
 }
 li {
  display: block;
@@ -56,10 +60,18 @@ li {
     color:  rgb(0, 0, 0);
     font-weight:bold;
     font-size: 60;
+
+    /*title case*/
+    text-transform: capitalize;
 }
+
+
 
 @media only screen and (min-width: 1600px) {
     .container {
-        margin:0 auto;
+        margin: 0 auto;
+
+
+        width: 1000px;
     }
 }
