@@ -10,6 +10,7 @@ body {
 h1 {
     color: white;
     margin-bottom: 20px;
+    font-family: 'Lobster', sans-serif;
 }
 /*
 .container .flex-outer {
