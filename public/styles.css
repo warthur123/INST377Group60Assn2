@@ -30,6 +30,7 @@ input {
 label {
     color:white;
     margin-right: 10px;
+    font-family: 'Lobster',sans-serif;
 }
 .filteredCases {
     /*background: rgb(251, 252, 185);
