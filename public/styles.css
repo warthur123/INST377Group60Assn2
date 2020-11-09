@@ -55,12 +55,12 @@ li {
  margin-bottom: 10px;
  color: rgb(100, 100, 100);
  border-radius: 20px;
- font-size: 30;
+ 
 }
 .name{
     color:  rgb(0, 0, 0);
     font-weight:bold;
-    font-size: 50;
+    font-size: 100;
 
     /*title case*/
     text-transform: capitalize;
