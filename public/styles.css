@@ -60,7 +60,7 @@ li {
 .name{
     color:  rgb(0, 0, 0);
     font-weight:bold;
-    font-size: 50px;
+    font-size: 20px;
 
     /*title case*/
     text-transform: capitalize;
